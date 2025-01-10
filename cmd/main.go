@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	port := ":8080"
+	port := ":80"
 	mainMux := http.NewServeMux()
 	mainMux.Handle("/", router.WebMux())
 	mainMux.Handle("/api/", router.APIMux())
